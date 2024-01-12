@@ -10,7 +10,7 @@ TESTS := $(wildcard tests/*.self)
 CHANNEL_SRC := channel.c channel.h
 MIMPI_COMMON_SRC := $(CHANNEL_SRC) mimpi_common.c mimpi_common.h
 MIMPIRUN_SRC := $(MIMPI_COMMON_SRC) mimpirun.c
-MIMPI_SRC := $(MIMPI_COMMON_SRC) mimpi.c mimpi.h
+MIMPI_SRC := $(MIMPI_COMMON_SRC) mimpi.c mimpi.h messageBufferHandler.c messageBufferHandler.h packetHandler.c packetHandler.h barrierServer.c types.h sendRecieveHandler.c sendRecieveHandler.h cascadeWakeupHandler.c cascadeWakeupHandler.h channelDefinitionService.c channelDefinitionService.h envVariableHandlers.c envVariableHandlers.h killExitListenerFunctions.c killExitListenerFunctions.h
 
 all: mimpirun $(EXAMPLES) $(TESTS)
 

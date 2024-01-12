@@ -24,6 +24,13 @@ typedef enum {
     MIMPI_PROD,
 } MIMPI_Op;
 
+typedef struct packet {
+    int tag;
+    int count;
+    int id;
+    char data[500];
+} packetT;
+
 /// @brief Initialises MIMPI framework in MIMPI programs.
 ///
 /// Opens an _MPI block_, permitting use of other MIMPI procedures.

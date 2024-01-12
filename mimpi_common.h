@@ -48,8 +48,4 @@ _Noreturn extern void fatal(const char* fmt, ...);
 /////////////////////////////////////////////
 // Put your declarations here
 
-
-
-
-
 #endif // MIMPI_COMMON_H
